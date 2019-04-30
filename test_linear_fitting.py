@@ -8,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import mpl_toolkits.mplot3d
 
-n = 2
+n = 20
 
 for i in range(10):
     fig = plt.figure(figsize=(12, 9), dpi=200)
@@ -55,5 +55,5 @@ for i in range(10):
     ax3 = fig.add_subplot(2, 1, 2)
     system.plot_traj(remapped_control, ax=ax3, arrow_scale=1.0, title=title)
 
-    plt.savefig('/home/cannon/Documents/caam564_final/plots/random_1_1_system_{}.png'.format(i))
+    plt.savefig('/home/cannon/Documents/caam564_final/plots/order_20_random_1_1_system_{}.png'.format(i))
 
